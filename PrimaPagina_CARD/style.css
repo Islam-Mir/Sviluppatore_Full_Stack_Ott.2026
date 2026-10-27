@@ -1,0 +1,92 @@
+body {
+
+    background-color: #002a9b;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+
+    color: coral;
+}
+
+
+h3 {
+
+    letter-spacing: 5px;
+}
+
+
+p {
+
+   font-weight: 800;
+   
+}
+
+.classe_personale_1 {
+
+    color: yellow;
+    background-color: red;
+    font-size: 24px;
+
+}
+
+.classe_personale_2 {
+
+    color: white;
+    background-color: green;
+    font-size: 10px;
+
+}
+
+.cnt_personale {
+
+    width: 326px;
+    height: 400px;
+    background-color: black;
+    text-align: center;
+    border: 3px solid green;
+    border-radius: 100px;
+    padding: 50px;
+    margin: 150px;
+    
+
+}
+
+.info {
+
+    margin-top: 45px;
+
+}
+
+.titolo {
+
+    margin-top: -40px;
+    margin-bottom: 60px;
+}
+
+.rotondo {
+
+    border-radius: 50%;
+    filter: contrast(450%);
+    
+}
+
+.acquista {
+
+    margin-top: 10px;
+}
+
+.image img{
+
+    width: 232px;
+    height: 232px;
+    
+}
+
+.cnt_personale img {
+
+    width: 232px;
+    height: 232px;
+    
+}

@@ -1,0 +1,30 @@
+cntrl + A -> seleziona tutto
+cntrl + C -> copia
+cntrl + V -> incolla
+cntrl + S -> salva
+cntrl + Y -> avanti 
+cntrl + X -> taglia
+cntrl + Z -> indietro (richiederà poi il salva)
+
+
+
+tag apro <qualcosa>
+    chiudo </qualcosa>
+
+indentazione è la struttura di scrittura del codice
+
+
+--------------------------------------------  CSS
+-------------------------------------CASCADING STYLE SHEET
+
+-Come utilizzare il css
+
+1) inline -> subito dopo il tag dentro l html
+
+        <body style="background-color: #002a9b; color: #ffff;">
+
+2) file separato -> importato nella sezione HEAD del file html
+
+        <link rel="stylesheet" href="style.css">
+
+3) dentro all HEAD del file html

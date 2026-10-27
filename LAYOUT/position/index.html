@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Position Relative e Absolute</title>
+
+    <style>
+
+
+        .main {
+
+            position: relative;
+        }
+
+        .quadrato {
+
+            height: 300px;
+            width: 300px;
+
+        }
+
+        .quadrato_b {
+
+            height: 30px;
+            width: 30px;
+            top: 30;
+            left: 50;
+        }
+
+        .quadrato_b2 {
+
+            height: 30px;
+            width: 30px;
+            bottom: 0;
+            right: -30;
+        }
+
+          .quadrato_b3 {
+
+            height: 300px;
+            width: 300px;
+            top: 0;
+            left: 650;
+        }
+
+        .rosso {
+
+            background-color: red;
+            margin-bottom: 10px;
+            position: absolute;
+            
+
+        }
+
+        
+        .giallo {
+
+            background-color: yellow;
+            margin-bottom: 10px;
+            position: absolute;
+            
+
+        }
+
+        .verde {
+
+            background-color: green;
+            position: absolute;
+            left: 310;
+        }
+
+        .blu{
+
+            background-color: blue;
+            position: absolute;
+
+           
+        }
+
+        .trash i{
+
+            width: 400px;
+            height: 400px;
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+    
+
+    <div class="main">
+
+        <div class="rosso quadrato">
+
+            <div class="trash">
+                <i class="fa-solid fa-trash"></i>
+            </div>
+            
+        </div>
+
+        <div class="verde quadrato">
+
+            <div class="blu quadrato_b"></div>
+            <div class="blu quadrato_b2"></div>
+
+        </div>
+
+        <div class="giallo quadrato_b3"></div>
+
+    </div>
+
+    
+
+
+
+</body>
+</html>

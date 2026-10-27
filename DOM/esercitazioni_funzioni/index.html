@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="cambiaColore" onmouseover="cambioColore()" onmouseout="coloreOriginale()">Cambia colore al titolo</h1>
+<br>
+<p id="">Testo da nascondere / mostrare</p>
+<button id="mostraTesto" onclick="mostratesto()" style="display: none;" >Mostra</button>
+<button id="nasondiTesto" onclick="nasconditesto()">Nascondi</button>
+<br>
+
+<h2 id="numero">0</h2>
+<button id="incrementa" onclick="aumenta()">Aumenta</button>
+<button id="decrementa" onclick="decrementa()">Decrementa</button><br><br>
+
+<button onclick="primoDado()">Lancia PRIMO dadao</button>
+<h1 id="primoNumero">1</h1>
+<br>
+<button onclick="secondoDado()">Lancia SECONDO dado</button>
+<h1 id="secondoNumero">1</h1>
+<button onclick="sommaDadi()">Clicca per sommare i due dadi:</button>
+<h1 id="mostraSommaDadi"></h1>
+<button onclick="vincitore()">Chi è il vincitore ?</button>
+<h1 id="vincitore"></h1>
+    <script src="main.js"></script>
+</body>
+</html>

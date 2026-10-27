@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spinner_Pedro</title>
+        <link
+            rel="stylesheet"
+            href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- TITOLO -->
+        <h1 class="d-flex justify-content-center align-items-center">
+            Spinner Pedro
+        </h1>
+
+        <!-- CONTAINER + IMMAGINE SFONDO + IMMAGINE PROCIONE -->
+        <div
+            id="cntSpinner"
+            class="spinner-container d-flex justify-content-center align-items-center mt-4 mx-auto"
+        >
+            <img class="spirale_img" src="./img/spirale.jpg" alt="" />
+
+            <img
+                class="procione_img"
+                src="./img/pedroPedro.png"
+                alt="immagine di un procione"
+            />
+        </div>
+
+        <!-- BOTTONI -->
+
+        <div class="d-flex justify-content-center align-content-center">
+            <button id="startButton" type="button" class="btn btn-outline-dark">
+                Start
+            </button>
+
+            <button id="stopButton" type="button" class="btn btn-outline-dark">
+                Stop
+            </button>
+
+            <button id="pausaButton" type="button" class="btn btn-outline-dark">
+                Pausa
+            </button>
+        </div>
+
+        <script src="main.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

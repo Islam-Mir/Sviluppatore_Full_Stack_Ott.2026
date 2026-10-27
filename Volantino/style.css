@@ -1,0 +1,210 @@
+/* Ripristino e impostazione dimensioni schermo */
+html, body {
+     width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif; 
+    color: #1a1a1a; 
+    
+    /* Immagine di sfondo unita al velo lilla */
+    background: linear-gradient(rgba(232, 230, 244, 0.8), rgba(232, 230, 244, 0.8)), url('src/sfondo.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+    /* Effetto sfocatura applicato allo sfondo */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+
+
+/* LA LOCANDINA: Copre il 95% dello schermo lasciando pochissimo spazio ai lati */
+.locandina-programmazione { 
+    width: 95vw;  
+    height: 95vh; 
+    background-color: rgba(255, 255, 255, 0.85); /* Sfondo bianco latte semitrasparente per far trasparire il fondo */
+    padding: 4vh 5vw; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+} 
+
+/* CORNICE GEOMETRICA DI STILE */
+.locandina-programmazione::after {
+    content: "";
+    position: absolute;
+    top: 1.5vh;
+    bottom: 1.5vh;
+    left: 1.5vw;
+    right: 1.5vw;
+    border: 1.5px solid rgba(26, 26, 26, 0.4); 
+    pointer-events: none; 
+    z-index: 10;
+}
+
+/* HEADER E LOGO REALISTICO */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+}
+
+.sottotitolo-alto {
+    font-size: clamp(0.75rem, 1.1vw, 1rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo-container {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border: 1.5px solid #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mantiene le proporzioni del tuo logo senza distorcerlo */
+}
+
+/* STRUTTURA CENTRALE */
+.corpo-locandina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    height: 72vh; 
+    width: 100%;
+}
+
+.sezione-testi {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.sezione-grafica {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+/* TESTI */
+.titolo-principale {
+    font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+    line-height: 1.15;
+    margin: 0 0 2.5vh 0;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-size: clamp(0.85rem, 1.1vw, 1.1rem);
+    margin: 0 0 1vh 0;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
+.blocco-info {
+    margin-bottom: 2vh;
+}
+
+.blocco-info p {
+    margin: 0;
+    font-size: clamp(0.8rem, 0.95vw, 0.95rem);
+    font-weight: 500;
+}
+
+/* BLOCCO CORSI */
+.blocco-corsi {
+    margin-bottom: 2vh;
+}
+
+.blocco-corsi h3 {
+    display: block;
+    margin-bottom: 1.5vh;
+}
+
+.corso-item {
+    margin-bottom: 1.5vh;
+}
+
+.data-ora {
+    font-size: clamp(0.75rem, 0.85vw, 0.85rem);
+    display: block;
+    color: #444;
+}
+
+.corso-item p {
+    margin: 0;
+    font-size: clamp(0.8rem, 0.95vw, 1rem);
+}
+
+/* IMMAGINE PRINCIPALE NITIDA E CODICE QR */
+.riquadro-immagine {
+    width: 100%;
+    height: 42vh;
+    border-radius: 8px;
+    border: 1.5px solid #1a1a1a;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.immagine-viva {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Taglia e adatta la foto dentro il riquadro in modo perfetto */
+}
+
+.riquadro-qr {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border: 1.5px solid #1a1a1a;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.qr-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* FOOTER */
+.footer-locandina {
+    height: 4vh;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.7rem, 0.8vw, 0.85rem);
+    color: #555;
+}
