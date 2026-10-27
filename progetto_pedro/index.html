@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PedroPedro</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+        <div class="d-flex justify-content-center bg-black">
+            <img id="immaginePedro" src="./src/pedro_vespa_.jpg" class="rounded-circle spinner-border" 
+            style="height: 300px; width: 300px; animation-direction: reverse;" >
+        </div>
+
+        <div class="d-flex justify-content-center gap-3 bg-secondary">
+            <audio id="canzonePedro" src="./src/Raffaella Carrà - Pedro.mp3"></audio>
+            <button onclick="btn_start()" class="d-flex justify-content-center gap-5 bg-success fs-1">START</button>
+            <button onclick="btn_pause()" class="d-flex justify-content-center gap-5 bg-warning fs-1">PAUSE</button>
+            <button onclick="btn_stop()" class="d-flex justify-content-center gap-5 bg-danger fs-1">STOP</button>
+        </div>
+
+    <script src="main.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
