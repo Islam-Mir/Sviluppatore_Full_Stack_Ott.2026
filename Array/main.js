@@ -254,20 +254,34 @@ const listaArticoli = [
     { nome: "Auricolari",   prezzo: 299.99,     quantita: 5  },
 ];
 
-const minoreDiCentoMap = listaArticoli.map((articoli) => {
-    if (articoli.prezzo<100) {
-      return articoli.nome;
-    } else {
-        return null;
-    }
+const prodottiEconimici = listaArticoli 
+.filter((p) => {
+    return p.prezzo < 100;
+})
+
+.map ((p) => {
+    return p.nome;
+
 });
-console.log(minoreDiCentoMap);
+console.log(prodottiEconimici);
 
 
-const minoreDiCentoFilter = listaArticoli.filter ((articoli,i) => {
-    
-  return articoli.prezzo<100;
-});
-console.log(minoreDiCentoFilter);
+//Dato un array di studenti estrai gli studenti promossi aventi la sufficienza
+//mostra in console i nomi
 
+const listaStudenti = [
+    {   nome:   "Matteo Serrani",       classe:   "5AIS", voto: 8},
+    {   nome:   "Giuseppe Esposito",    classe:   "5AIS", voto: 7},
+    {   nome:   "Cristian Balsano",     classe:   "5AIS", voto: 6},
+    {   nome:   "Simone Sorrentino",    classe:   "5AIS", voto: 5}
+];
 
+const studentiPromossi = listaStudenti
+    .filter( (s) => {
+        return s.voto >6;
+    })
+    .map ((s) => {
+        return s.nome;
+    });
+
+console.log(studentiPromossi);
