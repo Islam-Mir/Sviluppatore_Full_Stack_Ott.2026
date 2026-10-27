@@ -147,7 +147,7 @@ let media = somma / listaP.length;
 
 console.log(media);
 
-*/
+
 
 //Metodo map()
 
@@ -215,11 +215,11 @@ const minorenni = eta.some((anni) => {
     return anni <18;
 });
 console.log(minorenni);
-/*
+
 const minorenni_18 = eta.filter((anni) => {
     return anni<18;
 });
-console.log(minorenni_18); */
+console.log(minorenni_18); 
 
 
 
@@ -285,3 +285,42 @@ const studentiPromossi = listaStudenti
     });
 
 console.log(studentiPromossi);
+
+*/
+
+////////////////////////////////  Esercizio combinato 
+//Abbiamo una lista di prodotti, con prezzo e disponibilità, 
+//voglio solamente i prodotti disponibili 
+//e la somma dei prezzi degli oggetti disponibili
+
+const prodotti = [
+    {nome: "Farina", prezzo: 1.50, disponibilita: true},
+    {nome: "Zucchero", prezzo: 1.50, disponibilita: false},
+    {nome: "Olio", prezzo: 1.50, disponibilita: true},
+];
+
+const prodottiDisponibili = prodotti
+    .filter((pd) => {
+        return pd.disponibilita===true;
+    })
+
+    .reduce((accumulatore, p) => {
+        
+        return accumulatore + p.prezzo;
+    },0)
+  
+    
+      
+    ;
+    console.log(prodottiDisponibili);
+
+    /*
+    const totalecarrello = carrello.reduce((accumulatore, prodotto) => {
+    
+    const subtotale = prodotto.prezzo * prodotto.quantita;
+
+    return  accumulatore + subtotale;
+
+},0);
+
+console.log(totalecarrello.toFixed(2)); */
