@@ -1,0 +1,3 @@
+@extends('layouts.app')
+@section('title','Dettaglio cliente')
+@section('content')<h1 class="h3 mb-4">Dettaglio cliente</h1><div class="card"><div class="card-body"><dl class="row"><dt class="col-sm-4">Nome</dt><dd class="col-sm-8">{{ $cliente->nome }}</dd><dt class="col-sm-4">Cognome</dt><dd class="col-sm-8">{{ $cliente->cognome }}</dd><dt class="col-sm-4">Email</dt><dd class="col-sm-8">{{ $cliente->email }}</dd><dt class="col-sm-4">Nazione</dt><dd class="col-sm-8">{{ $cliente->nazione }}</dd></dl><a href="{{ route('clienti.index') }}" class="btn btn-outline-secondary">Torna all’elenco</a> @if(auth()->user()->isManager())<a href="{{ route('clienti.edit', $cliente) }}" class="btn btn-primary">Modifica</a>@endif</div></div>@endsection
