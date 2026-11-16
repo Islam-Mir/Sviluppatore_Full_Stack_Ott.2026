@@ -1,0 +1,67 @@
+- Autenticazione / sicurezza CRSF TOKEN - hash Password
+
+    vari tipi di autenticazione : 0Auth, 0Auth2, MD5, Single Sign On(Google)
+
+    flusso registrazione : form, compiliamo i campi rechiesti 
+                           e con metodo POST creiamo un "oggetto"
+                           per aggiungere un entità nuova sul db
+                           con "mail e password"
+                        
+                        -  il server manda una mail per confermare l identità (sulla mail)
+
+                        -  se "non confermiamo" il link mandato via mail entro un tot di tempo
+                                la registrazione salta. (metodo di token temporaneo)
+
+                        - in alternativa : ho l utente salvato su db; lascero' un messaggio di alert all utente 
+                                           l utente verrà reindirizzato alla pagina di Login
+
+
+                        Noi faremo questo metodo Sicurezza CRSF TOKEN 
+                        - hash(TOKEN) -> funzione crittografica "sha256 o MD5"
+
+
+- Connettore nativo di php : Api Db "PDO" ( "nuovo" metodo per api )
+                                          ( quello vecchio si chiamava mysqli ) 
+
+- Creazione db su MySQL(Pagina phpmyadmin)
+
+- CLI (command line interface) lanceremo comandi per il Db
+
+
+
+
+-------------------------------------------
+
+creare cartella sql con schema.sql    // struttura db
+creare cartella config con config.php // credenziali
+creare cartella classes con Db.php // classe Db
+
+
+
+
+--------------------------------------------------
+                        RECAP 
+--------------------------------------------------
+
+
+register.php : POST (name, email, password)
+               validazione dell input
+               check email univoco (SELECT)
+               password_hash
+               INSERT (inserimento) users
+               Conferma -> redirect a login.php
+
+login.php    : POST (email, password)
+               reindirizzato a dashboard corretta con ROLE ID = QUALCOSA
+
+
+
+dashboard.php : dobbiamo controllare $_SESSION
+                se non loggato -> redirect a login
+                mostra il contenuto privato
+
+
+logout.php    : distruzione della sessione ( session_destroy() )
+                redirect a login o index
+
+
