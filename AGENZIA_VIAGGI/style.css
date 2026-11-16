@@ -1,0 +1,95 @@
+/* Impostazioni base per sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fdfcdc;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Intestazioni */
+h1, h2, h3 {
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 1rem;
+}
+
+/* Tabelle */
+.table {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 175, 185, 0.5);
+}
+
+.table thead th {
+  background-color: #f1f3f5;
+  font-weight: 500;
+  color: #495057;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+/* Form */
+form input, form select {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+
+form .btn {
+  min-width: 120px;
+}
+
+/* Messaggi di alert */
+.alert {
+  border-radius: 6px;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #0081a7 !important;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  margin-right: 10px;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer coerente con navbar */
+footer {
+  background-color: #0081a7;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Card */
+.card {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+
+.navbar-brand img {
+  border-radius: 6px;
+  object-fit: contain;
+}

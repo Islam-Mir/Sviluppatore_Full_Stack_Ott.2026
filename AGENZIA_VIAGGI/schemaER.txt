@@ -1,0 +1,55 @@
+
+-------------------CLIENTI-------------------
+
+id (PK)
+nome
+cognome
+email
+telefono
+nazione
+
+
+-------------------DESTINAZIONI-------------------
+
+id (PK)
+città
+paese
+prezzo
+data_partenza
+data_ritorno
+
+
+-------------------PRENOTAZIONI-------------------
+
+id (PK)
+id_cliente (FK → CLIENTI.id)
+id_destinazione (FK → DESTINAZIONI.id)
+data_prenotazione
+num_persone
+
+
+
+-------------------RELAZIONI-------------------
+
+CLIENTE → PRENOTAZIONI:
+1:N (un cliente può avere più prenotazioni)
+
+DESTINAZIONE → PRENOTAZIONI:
+1:N (una destinazione può essere prenotata da più clienti)
+
+
+
+
+-------------------SCHEMA ER TESTUALE-------------------
+
+
++------------+          +----------------+         +-------------------+
+|  CLIENTI   |          |  PRENOTAZIONI  |         |   DESTINAZIONI    |
++------------+          +----------------+         +-------------------+
+| id (PK)    |◄────┐    | id (PK)        |    ┌────► id (PK)          |
+| nome       |     └────┤ id_cliente (FK)|    |     | città            |
+| cognome    |          | id_destinazione|────┘     | paese            |
+| email      |          | data_prenotaz. |          | prezzo           |
+| telefono   |          | num_persone    |          | partenza         |
+| nazione    |          +----------------+          | ritorno          |
++------------+                                      +-------------------+

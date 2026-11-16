@@ -1,0 +1,59 @@
+Passo 1: Genera il link iCal su Proton
+Accedi a Proton Calendar da browser.
+Vai su Impostazioni (l'ingranaggio in alto) -> Tutte le impostazioni.
+Seleziona Calendari nella barra laterale e clicca sul calendario desiderato.
+Scorri fino alla sezione "Condividi con chiunque" e clicca su Crea link.
+Imposta l'accesso su "Visualizzazione completa" e copia il link generato (sarà un URL che termina in .ics). [1, 2, 3]
+
+Passo 2: Leggere e decodificare il file in JavaScript
+Poiché il link restituisce un file iCalendar testuale, puoi usare JavaScript (Node.js o browser) abbinato a una libreria di parsing come ical.js per trasformare i dati in oggetti JSON.
+
+javascript
+// Esempio in Node.js (richiede l'installazione di 'node-fetch' e 'ical.js')
+import ical from 'ical.js'
+;
+const protonCalendarUrl = 'URL_DEL_TUO_LINK_PROTON_ICS'
+;
+async function getProtonEvents
+() {
+  try
+ {
+    const response = await
+ fetch(protonCalendarUrl);
+    const icalText = await
+ response.text();
+    
+    // Parsa il file iCal
+    const jcalData
+ = ical.parse(icalText);
+    const comp = new
+ ical.Component(jcalData);
+    const vevents = comp.getAllSubcomponents('vevent'
+);
+    
+    const events
+ = vevents.map(vevent => {
+      const event = new
+ ical.Event(vevent);
+      return
+ {
+        title
+: event.summary,
+        start
+: event.startDate.toString(),
+        end
+: event.endDate.toString(),
+        description
+: event.description
+      };
+    });
+    
+    console.log("Eventi Proton Calendar:"
+, events);
+  } catch (error
+) {
+    console.error("Errore nel recupero del calendario:"
+, error);
+  }
+}
+getProtonEvents();
