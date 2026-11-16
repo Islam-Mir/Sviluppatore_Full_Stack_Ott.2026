@@ -1,0 +1,115 @@
+[
+  {
+    "id": "01",
+    "title": "Ritmo e volumi",
+    "category": "Arredo su misura",
+    "description": "Un arredo su misura costruito attraverso l’alternanza di pieni, vuoti e inserti materici. Colore, finiture e proporzioni definiscono il ritmo della composizione e valorizzano il carattere del mobile.",
+    "services": [
+      "Concept",
+      "Progettazione",
+      "Studio di materiali e finiture",
+      "Modellazione 3D",
+      "Visualizzazione"
+    ],
+    "images": [
+      "/images/page-05-1.webp",
+      "/images/page-06-1.webp",
+      "/images/page-06-2.webp",
+      "/images/page-07-1.webp"
+    ]
+  },
+  {
+    "id": "02",
+    "title": "Superfici in dialogo",
+    "category": "Cucina su misura",
+    "description": "Una cucina su misura pensata come una composizione continua di volumi e superfici. Legno, finiture laccate e materiale lapideo dialogano attraverso contrasti delicati, dettagli e variazioni di texture.",
+    "services": [
+      "Concept",
+      "Progettazione",
+      "Studio di materiali e finiture",
+      "Modellazione 3D",
+      "Visualizzazione"
+    ],
+    "images": [
+      "/images/page-08-1.webp",
+      "/images/page-09-1.webp",
+      "/images/page-09-2.webp",
+      "/images/page-10-1.webp",
+      "/images/page-10-2.webp",
+      "/images/page-11-1.webp"
+    ]
+  },
+  {
+    "id": "03",
+    "title": "Spazi in equilibrio",
+    "category": "Interior design residenziale",
+    "description": "Un progetto d’interni sviluppato attraverso un linguaggio coerente tra spazi, arredi e materiali. Toni caldi, elementi su misura e accenti cromatici costruiscono ambienti contemporanei, accoglienti e coordinati.",
+    "services": [
+      "Concept",
+      "Progettazione",
+      "Studio di materiali e finiture",
+      "Modellazione 3D",
+      "Visualizzazione"
+    ],
+    "images": [
+      "/images/page-12-1.webp",
+      "/images/page-13-1.webp",
+      "/images/page-13-2.webp",
+      "/images/page-14-1.webp"
+    ]
+  },
+  {
+    "id": "04",
+    "title": "Materia immaginata",
+    "category": "Concept e visualizzazione con IA",
+    "description": "Una ricerca visiva sviluppata attraverso l’intelligenza artificiale generativa, esplorando nuove relazioni tra spazio, materia, luce e atmosfera. L’immagine diventa uno strumento di ricerca e narrazione, capace di costruire scenari possibili e nuove forme di racconto dell’architettura.",
+    "services": [
+      "Concept creativo",
+      "Direzione visiva",
+      "Ricerca materica",
+      "IA generativa",
+      "Post-produzione"
+    ],
+    "images": [
+      "/images/page-15-1.webp",
+      "/images/page-16-1.webp",
+      "/images/page-17-1.webp",
+      "/images/page-18-1.webp",
+      "/images/page-18-2.webp"
+    ]
+  },
+  {
+    "id": "05",
+    "title": "Paesaggio abitato",
+    "category": "Visualizzazione architettonica",
+    "description": "Il progetto visivo racconta una residenza contemporanea attraverso il dialogo tra architettura e paesaggio. Materia, luce, acqua e vegetazione definiscono immagini atmosferiche e credibili, capaci di restituire il carattere dell’intervento e il suo rapporto con il contesto.",
+    "services": [
+      "Studio di materiali e finiture",
+      "Studio della luce",
+      "Ambientazione",
+      "Visualizzazione"
+    ],
+    "images": [
+      "/images/page-19-1.webp",
+      "/images/page-20-1.webp",
+      "/images/page-21-1.webp",
+      "/images/page-21-2.webp"
+    ]
+  },
+  {
+    "id": "06",
+    "title": "Trame urbane",
+    "category": "Visualizzazione di uno spazio pubblico",
+    "description": "Il racconto per immagini mette in evidenza la relazione tra percorsi, vegetazione, acqua e strutture leggere. La successione degli scorci restituisce il ritmo dello spazio pubblico e il modo in cui elementi costruiti e paesaggio definiscono l’esperienza urbana.",
+    "services": [
+      "Modellazione 3D",
+      "Studio di materiali e finiture",
+      "Visualizzazione"
+    ],
+    "images": [
+      "/images/page-22-1.webp",
+      "/images/page-23-1.webp",
+      "/images/page-24-1.webp"
+    ]
+  }
+]
